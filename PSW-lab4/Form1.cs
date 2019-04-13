@@ -42,5 +42,6 @@ namespace PSW_lab4
                 PasswordErrorBox.Visible = false;
             }
         }
+        
     }
 }
