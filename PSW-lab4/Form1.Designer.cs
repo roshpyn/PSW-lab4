@@ -50,15 +50,16 @@
             this.r_password1 = new System.Windows.Forms.Label();
             this.r_password2 = new System.Windows.Forms.Label();
             this.r_email = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.r_TextBoxName = new System.Windows.Forms.TextBox();
+            this.r_TextBoxSurname = new System.Windows.Forms.TextBox();
+            this.r_TextBoxPassword1 = new System.Windows.Forms.TextBox();
+            this.r_TextBoxPassword2 = new System.Windows.Forms.TextBox();
+            this.r_TextBoxEmail = new System.Windows.Forms.TextBox();
+            this.r_TextBoxLogin = new System.Windows.Forms.TextBox();
             this.r_register = new System.Windows.Forms.Button();
             this.r_PasswordError = new System.Windows.Forms.Label();
             this.r_infoEmail = new System.Windows.Forms.Label();
+            this.r_PasswordCheckBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -173,11 +174,11 @@
             // PasswordErrorBox
             // 
             this.PasswordErrorBox.AutoSize = true;
-            this.PasswordErrorBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PasswordErrorBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PasswordErrorBox.ForeColor = System.Drawing.Color.Red;
-            this.PasswordErrorBox.Location = new System.Drawing.Point(296, 60);
+            this.PasswordErrorBox.Location = new System.Drawing.Point(197, 60);
             this.PasswordErrorBox.Name = "PasswordErrorBox";
-            this.PasswordErrorBox.Size = new System.Drawing.Size(108, 30);
+            this.PasswordErrorBox.Size = new System.Drawing.Size(207, 30);
             this.PasswordErrorBox.TabIndex = 9;
             this.PasswordErrorBox.Text = "Hasła nie są zgodne!";
             this.PasswordErrorBox.Visible = false;
@@ -199,6 +200,7 @@
             this.PasswordTextbox2.Size = new System.Drawing.Size(98, 20);
             this.PasswordTextbox2.TabIndex = 11;
             this.PasswordTextbox2.UseSystemPasswordChar = true;
+            this.PasswordTextbox2.TextChanged += new System.EventHandler(this.PasswordTextbox2_TextChanged);
             // 
             // Logging_button
             // 
@@ -245,15 +247,16 @@
             this.tableLayoutPanel2.Controls.Add(this.r_password1, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.r_password2, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.r_email, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxName, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxSurname, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxPassword1, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxPassword2, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxEmail, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxLogin, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.r_register, 2, 7);
             this.tableLayoutPanel2.Controls.Add(this.r_PasswordError, 2, 5);
             this.tableLayoutPanel2.Controls.Add(this.r_infoEmail, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.r_PasswordCheckBox1, 2, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(460, 0);
@@ -330,56 +333,59 @@
             this.r_email.TabIndex = 6;
             this.r_email.Text = "Email: ";
             // 
-            // textBox1
+            // r_TextBoxName
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(90, 3);
-            this.textBox1.MaxLength = 15;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 7;
+            this.r_TextBoxName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.r_TextBoxName.Location = new System.Drawing.Point(90, 3);
+            this.r_TextBoxName.MaxLength = 15;
+            this.r_TextBoxName.Name = "r_TextBoxName";
+            this.r_TextBoxName.Size = new System.Drawing.Size(200, 20);
+            this.r_TextBoxName.TabIndex = 7;
             // 
-            // textBox2
+            // r_TextBoxSurname
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(90, 33);
-            this.textBox2.MaxLength = 15;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 8;
+            this.r_TextBoxSurname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.r_TextBoxSurname.Location = new System.Drawing.Point(90, 33);
+            this.r_TextBoxSurname.MaxLength = 15;
+            this.r_TextBoxSurname.Name = "r_TextBoxSurname";
+            this.r_TextBoxSurname.Size = new System.Drawing.Size(200, 20);
+            this.r_TextBoxSurname.TabIndex = 8;
             // 
-            // textBox3
+            // r_TextBoxPassword1
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 113);
-            this.textBox3.MaxLength = 15;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.r_TextBoxPassword1.Location = new System.Drawing.Point(90, 113);
+            this.r_TextBoxPassword1.MaxLength = 15;
+            this.r_TextBoxPassword1.Name = "r_TextBoxPassword1";
+            this.r_TextBoxPassword1.Size = new System.Drawing.Size(100, 20);
+            this.r_TextBoxPassword1.TabIndex = 10;
+            this.r_TextBoxPassword1.UseSystemPasswordChar = true;
             // 
-            // textBox4
+            // r_TextBoxPassword2
             // 
-            this.textBox4.Location = new System.Drawing.Point(90, 143);
-            this.textBox4.MaxLength = 15;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.r_TextBoxPassword2.Location = new System.Drawing.Point(90, 143);
+            this.r_TextBoxPassword2.MaxLength = 15;
+            this.r_TextBoxPassword2.Name = "r_TextBoxPassword2";
+            this.r_TextBoxPassword2.Size = new System.Drawing.Size(100, 20);
+            this.r_TextBoxPassword2.TabIndex = 11;
+            this.r_TextBoxPassword2.UseSystemPasswordChar = true;
+            this.r_TextBoxPassword2.TextChanged += new System.EventHandler(this.r_TextBoxPassword2_TextChanged);
             // 
-            // textBox5
+            // r_TextBoxEmail
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox5.Location = new System.Drawing.Point(90, 173);
-            this.textBox5.MaxLength = 30;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 20);
-            this.textBox5.TabIndex = 12;
+            this.r_TextBoxEmail.Dock = System.Windows.Forms.DockStyle.Left;
+            this.r_TextBoxEmail.Location = new System.Drawing.Point(90, 173);
+            this.r_TextBoxEmail.MaxLength = 30;
+            this.r_TextBoxEmail.Name = "r_TextBoxEmail";
+            this.r_TextBoxEmail.Size = new System.Drawing.Size(200, 20);
+            this.r_TextBoxEmail.TabIndex = 12;
             // 
-            // textBox6
+            // r_TextBoxLogin
             // 
-            this.textBox6.Location = new System.Drawing.Point(90, 83);
-            this.textBox6.MaxLength = 15;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
+            this.r_TextBoxLogin.Location = new System.Drawing.Point(90, 83);
+            this.r_TextBoxLogin.MaxLength = 15;
+            this.r_TextBoxLogin.Name = "r_TextBoxLogin";
+            this.r_TextBoxLogin.Size = new System.Drawing.Size(100, 20);
+            this.r_TextBoxLogin.TabIndex = 13;
             // 
             // r_register
             // 
@@ -395,9 +401,9 @@
             // r_PasswordError
             // 
             this.r_PasswordError.AutoSize = true;
-            this.r_PasswordError.Dock = System.Windows.Forms.DockStyle.Right;
+            this.r_PasswordError.Dock = System.Windows.Forms.DockStyle.Left;
             this.r_PasswordError.ForeColor = System.Drawing.Color.Red;
-            this.r_PasswordError.Location = new System.Drawing.Point(351, 140);
+            this.r_PasswordError.Location = new System.Drawing.Point(296, 140);
             this.r_PasswordError.Name = "r_PasswordError";
             this.r_PasswordError.Size = new System.Drawing.Size(108, 30);
             this.r_PasswordError.TabIndex = 15;
@@ -413,6 +419,17 @@
             this.r_infoEmail.TabIndex = 16;
             this.r_infoEmail.Text = "Email może składać się \n z maksymalnie 30 znaków";
             this.r_infoEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // r_PasswordCheckBox1
+            // 
+            this.r_PasswordCheckBox1.AutoSize = true;
+            this.r_PasswordCheckBox1.Location = new System.Drawing.Point(296, 113);
+            this.r_PasswordCheckBox1.Name = "r_PasswordCheckBox1";
+            this.r_PasswordCheckBox1.Size = new System.Drawing.Size(86, 17);
+            this.r_PasswordCheckBox1.TabIndex = 17;
+            this.r_PasswordCheckBox1.Text = "Pokaż hasło";
+            this.r_PasswordCheckBox1.UseVisualStyleBackColor = true;
+            this.r_PasswordCheckBox1.CheckedChanged += new System.EventHandler(this.r_PasswordCheckBox1_CheckedChanged);
             // 
             // Form1
             // 
@@ -463,16 +480,17 @@
         private System.Windows.Forms.Label r_password1;
         private System.Windows.Forms.Label r_password2;
         private System.Windows.Forms.Label r_email;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox r_TextBoxName;
+        private System.Windows.Forms.TextBox r_TextBoxSurname;
+        private System.Windows.Forms.TextBox r_TextBoxPassword1;
+        private System.Windows.Forms.TextBox r_TextBoxPassword2;
+        private System.Windows.Forms.TextBox r_TextBoxEmail;
         private System.Windows.Forms.CheckBox PasswordCheckBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox r_TextBoxLogin;
         private System.Windows.Forms.Button r_register;
         private System.Windows.Forms.Label r_PasswordError;
         private System.Windows.Forms.Label r_infoEmail;
+        private System.Windows.Forms.CheckBox r_PasswordCheckBox1;
     }
 }
 
