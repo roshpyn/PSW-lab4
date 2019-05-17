@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PSW_lab4
@@ -11,12 +8,17 @@ namespace PSW_lab4
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
+        /// 
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+           // MailSender mailSender = new MailSender();
+           // mailSender.SendEmail("lukasz.szadowski@gmail.com", "aa", "AA");
         }
     }
 }

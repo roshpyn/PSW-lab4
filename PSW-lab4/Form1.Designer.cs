@@ -28,18 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.PalelLogging = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.LoginTextBox = new System.Windows.Forms.TextBox();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordLabel1 = new System.Windows.Forms.Label();
-            this.PasswordLabel2 = new System.Windows.Forms.Label();
-            this.PasswordErrorBox = new System.Windows.Forms.Label();
             this.PasswordTextbox1 = new System.Windows.Forms.TextBox();
-            this.PasswordTextbox2 = new System.Windows.Forms.TextBox();
             this.Logging_button = new System.Windows.Forms.Button();
             this.PasswordCheckBox1 = new System.Windows.Forms.CheckBox();
             this.PalelRegister = new System.Windows.Forms.GroupBox();
@@ -60,6 +55,7 @@
             this.r_PasswordError = new System.Windows.Forms.Label();
             this.r_infoEmail = new System.Windows.Forms.Label();
             this.r_PasswordCheckBox1 = new System.Windows.Forms.CheckBox();
+            this.r_loginButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,11 +65,6 @@
             this.PalelRegister.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // splitContainer1
             // 
@@ -106,20 +97,17 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.LoginTextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.LoginLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.PasswordLabel1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordLabel2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordErrorBox, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.PasswordTextbox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordTextbox2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.Logging_button, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordCheckBox1, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Logging_button, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.PasswordCheckBox1, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -161,28 +149,6 @@
             this.PasswordLabel1.TabIndex = 2;
             this.PasswordLabel1.Text = "Hasło: ";
             // 
-            // PasswordLabel2
-            // 
-            this.PasswordLabel2.AutoSize = true;
-            this.PasswordLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PasswordLabel2.Location = new System.Drawing.Point(3, 60);
-            this.PasswordLabel2.Name = "PasswordLabel2";
-            this.PasswordLabel2.Size = new System.Drawing.Size(84, 30);
-            this.PasswordLabel2.TabIndex = 3;
-            this.PasswordLabel2.Text = "Powtórz hasło: ";
-            // 
-            // PasswordErrorBox
-            // 
-            this.PasswordErrorBox.AutoSize = true;
-            this.PasswordErrorBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PasswordErrorBox.ForeColor = System.Drawing.Color.Red;
-            this.PasswordErrorBox.Location = new System.Drawing.Point(197, 60);
-            this.PasswordErrorBox.Name = "PasswordErrorBox";
-            this.PasswordErrorBox.Size = new System.Drawing.Size(207, 30);
-            this.PasswordErrorBox.TabIndex = 9;
-            this.PasswordErrorBox.Text = "Hasła nie są zgodne!";
-            this.PasswordErrorBox.Visible = false;
-            // 
             // PasswordTextbox1
             // 
             this.PasswordTextbox1.Location = new System.Drawing.Point(93, 33);
@@ -192,22 +158,12 @@
             this.PasswordTextbox1.TabIndex = 10;
             this.PasswordTextbox1.UseSystemPasswordChar = true;
             // 
-            // PasswordTextbox2
-            // 
-            this.PasswordTextbox2.Location = new System.Drawing.Point(93, 63);
-            this.PasswordTextbox2.MaxLength = 15;
-            this.PasswordTextbox2.Name = "PasswordTextbox2";
-            this.PasswordTextbox2.Size = new System.Drawing.Size(98, 20);
-            this.PasswordTextbox2.TabIndex = 11;
-            this.PasswordTextbox2.UseSystemPasswordChar = true;
-            this.PasswordTextbox2.TextChanged += new System.EventHandler(this.PasswordTextbox2_TextChanged);
-            // 
             // Logging_button
             // 
             this.Logging_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Logging_button.Location = new System.Drawing.Point(294, 93);
+            this.Logging_button.Location = new System.Drawing.Point(306, 93);
             this.Logging_button.Name = "Logging_button";
-            this.Logging_button.Size = new System.Drawing.Size(110, 24);
+            this.Logging_button.Size = new System.Drawing.Size(98, 24);
             this.Logging_button.TabIndex = 12;
             this.Logging_button.Text = "Zaloguj";
             this.Logging_button.UseVisualStyleBackColor = true;
@@ -222,7 +178,7 @@
             this.PasswordCheckBox1.TabIndex = 13;
             this.PasswordCheckBox1.Text = "Pokaż hasło";
             this.PasswordCheckBox1.UseVisualStyleBackColor = true;
-            this.PasswordCheckBox1.CheckedChanged += new System.EventHandler(this.PasswordCheckbox1_Checked);
+            this.PasswordCheckBox1.CheckedChanged += new System.EventHandler(this.PasswordCheckBox1_CheckedChanged);
             // 
             // PalelRegister
             // 
@@ -257,6 +213,7 @@
             this.tableLayoutPanel2.Controls.Add(this.r_PasswordError, 2, 5);
             this.tableLayoutPanel2.Controls.Add(this.r_infoEmail, 2, 6);
             this.tableLayoutPanel2.Controls.Add(this.r_PasswordCheckBox1, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.r_loginButton, 2, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(460, 0);
@@ -431,6 +388,15 @@
             this.r_PasswordCheckBox1.UseVisualStyleBackColor = true;
             this.r_PasswordCheckBox1.CheckedChanged += new System.EventHandler(this.r_PasswordCheckBox1_CheckedChanged);
             // 
+            // r_loginButton
+            // 
+            this.r_loginButton.Location = new System.Drawing.Point(296, 83);
+            this.r_loginButton.Name = "r_loginButton";
+            this.r_loginButton.Size = new System.Drawing.Size(133, 23);
+            this.r_loginButton.TabIndex = 18;
+            this.r_loginButton.Text = "Sprawdź dostępność";
+            this.r_loginButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,18 +425,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox PalelLogging;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox LoginTextBox;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Label PasswordLabel1;
-        private System.Windows.Forms.Label PasswordLabel2;
-        private System.Windows.Forms.Label PasswordErrorBox;
         private System.Windows.Forms.TextBox PasswordTextbox1;
-        private System.Windows.Forms.TextBox PasswordTextbox2;
         private System.Windows.Forms.GroupBox PalelRegister;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label r_name;
@@ -491,6 +452,7 @@
         private System.Windows.Forms.Label r_PasswordError;
         private System.Windows.Forms.Label r_infoEmail;
         private System.Windows.Forms.CheckBox r_PasswordCheckBox1;
+        private System.Windows.Forms.Button r_loginButton;
     }
 }
 
