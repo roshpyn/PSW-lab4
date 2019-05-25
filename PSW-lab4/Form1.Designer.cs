@@ -28,431 +28,454 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.PalelLogging = new System.Windows.Forms.GroupBox();
+            this.tab_logging = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.LoginTextBox = new System.Windows.Forms.TextBox();
-            this.LoginLabel = new System.Windows.Forms.Label();
-            this.PasswordLabel1 = new System.Windows.Forms.Label();
-            this.PasswordTextbox1 = new System.Windows.Forms.TextBox();
-            this.Logging_button = new System.Windows.Forms.Button();
-            this.PasswordCheckBox1 = new System.Windows.Forms.CheckBox();
-            this.PalelRegister = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.r_name = new System.Windows.Forms.Label();
-            this.r_surname = new System.Windows.Forms.Label();
-            this.r_login = new System.Windows.Forms.Label();
-            this.r_password1 = new System.Windows.Forms.Label();
-            this.r_password2 = new System.Windows.Forms.Label();
-            this.r_email = new System.Windows.Forms.Label();
-            this.r_TextBoxName = new System.Windows.Forms.TextBox();
-            this.r_TextBoxSurname = new System.Windows.Forms.TextBox();
-            this.r_TextBoxPassword1 = new System.Windows.Forms.TextBox();
-            this.r_TextBoxPassword2 = new System.Windows.Forms.TextBox();
-            this.r_TextBoxEmail = new System.Windows.Forms.TextBox();
-            this.r_TextBoxLogin = new System.Windows.Forms.TextBox();
-            this.r_register = new System.Windows.Forms.Button();
-            this.r_PasswordError = new System.Windows.Forms.Label();
-            this.r_infoEmail = new System.Windows.Forms.Label();
-            this.r_PasswordCheckBox1 = new System.Windows.Forms.CheckBox();
-            this.r_loginButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.PalelLogging.SuspendLayout();
+            this.label_lp_title = new System.Windows.Forms.Label();
+            this.label_lp_login = new System.Windows.Forms.Label();
+            this.label_lp_password = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tab_register = new System.Windows.Forms.TabPage();
+            this.table_register = new System.Windows.Forms.TableLayoutPanel();
+            this.label_rp_title = new System.Windows.Forms.Label();
+            this.label_rp_name = new System.Windows.Forms.Label();
+            this.label_rp_surname = new System.Windows.Forms.Label();
+            this.label_rp_login = new System.Windows.Forms.Label();
+            this.label_rp_password1 = new System.Windows.Forms.Label();
+            this.label_rp_password2 = new System.Windows.Forms.Label();
+            this.label_rp_email = new System.Windows.Forms.Label();
+            this.checkBox_rp_password = new System.Windows.Forms.CheckBox();
+            this.label_rp_password_match = new System.Windows.Forms.Label();
+            this.label_rp_email_valid = new System.Windows.Forms.Label();
+            this.textBox_rp_email = new System.Windows.Forms.TextBox();
+            this.textBox_rp_name = new System.Windows.Forms.TextBox();
+            this.textBox_rp_surname = new System.Windows.Forms.TextBox();
+            this.textBox_rp_login = new System.Windows.Forms.TextBox();
+            this.textBox_rp_password1 = new System.Windows.Forms.TextBox();
+            this.textBox_rp_password2 = new System.Windows.Forms.TextBox();
+            this.button_rp_register = new System.Windows.Forms.Button();
+            this.button_lp_login = new System.Windows.Forms.Button();
+            this.tab_logging.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.PalelRegister.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tab_register.SuspendLayout();
+            this.table_register.SuspendLayout();
             this.SuspendLayout();
             // 
-            // splitContainer1
+            // tab_logging
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
+            this.tab_logging.Controls.Add(this.tabPage1);
+            this.tab_logging.Controls.Add(this.tab_register);
+            this.tab_logging.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tab_logging.Location = new System.Drawing.Point(0, 0);
+            this.tab_logging.Name = "tab_logging";
+            this.tab_logging.SelectedIndex = 0;
+            this.tab_logging.Size = new System.Drawing.Size(484, 261);
+            this.tab_logging.TabIndex = 0;
             // 
-            // splitContainer1.Panel1
+            // tabPage1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.PalelLogging);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.PalelRegister);
-            this.splitContainer1.Size = new System.Drawing.Size(884, 261);
-            this.splitContainer1.SplitterDistance = 413;
-            this.splitContainer1.TabIndex = 3;
-            // 
-            // PalelLogging
-            // 
-            this.PalelLogging.Controls.Add(this.tableLayoutPanel1);
-            this.PalelLogging.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PalelLogging.Location = new System.Drawing.Point(0, 0);
-            this.PalelLogging.MinimumSize = new System.Drawing.Size(405, 0);
-            this.PalelLogging.Name = "PalelLogging";
-            this.PalelLogging.Size = new System.Drawing.Size(413, 261);
-            this.PalelLogging.TabIndex = 0;
-            this.PalelLogging.TabStop = false;
-            this.PalelLogging.Text = "Logowanie";
+            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(476, 235);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Logowanie";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.LoginTextBox, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.LoginLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordLabel1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordTextbox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.Logging_button, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.PasswordCheckBox1, 2, 1);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.label_lp_title, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label_lp_login, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label_lp_password, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button_lp_login, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(407, 242);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(470, 229);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // LoginTextBox
+            // label_lp_title
             // 
-            this.LoginTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LoginTextBox.Location = new System.Drawing.Point(93, 3);
-            this.LoginTextBox.MaxLength = 15;
-            this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(98, 20);
-            this.LoginTextBox.TabIndex = 1;
+            this.label_lp_title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_lp_title.AutoSize = true;
+            this.label_lp_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.label_lp_title.Location = new System.Drawing.Point(120, 0);
+            this.label_lp_title.Name = "label_lp_title";
+            this.label_lp_title.Size = new System.Drawing.Size(229, 38);
+            this.label_lp_title.TabIndex = 0;
+            this.label_lp_title.Text = "Zaloguj";
+            this.label_lp_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LoginLabel
+            // label_lp_login
             // 
-            this.LoginLabel.AutoSize = true;
-            this.LoginLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LoginLabel.Location = new System.Drawing.Point(3, 0);
-            this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(84, 30);
-            this.LoginLabel.TabIndex = 0;
-            this.LoginLabel.Text = "Login: ";
+            this.label_lp_login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_lp_login.AutoSize = true;
+            this.label_lp_login.Location = new System.Drawing.Point(3, 64);
+            this.label_lp_login.Name = "label_lp_login";
+            this.label_lp_login.Size = new System.Drawing.Size(111, 13);
+            this.label_lp_login.TabIndex = 2;
+            this.label_lp_login.Text = "Nazwa użytkownika: ";
+            this.label_lp_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // PasswordLabel1
+            // label_lp_password
             // 
-            this.PasswordLabel1.AutoSize = true;
-            this.PasswordLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PasswordLabel1.Location = new System.Drawing.Point(3, 30);
-            this.PasswordLabel1.Name = "PasswordLabel1";
-            this.PasswordLabel1.Size = new System.Drawing.Size(84, 30);
-            this.PasswordLabel1.TabIndex = 2;
-            this.PasswordLabel1.Text = "Hasło: ";
+            this.label_lp_password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_lp_password.AutoSize = true;
+            this.label_lp_password.Location = new System.Drawing.Point(3, 90);
+            this.label_lp_password.Name = "label_lp_password";
+            this.label_lp_password.Size = new System.Drawing.Size(111, 13);
+            this.label_lp_password.TabIndex = 3;
+            this.label_lp_password.Text = "Hasło: ";
+            this.label_lp_password.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // PasswordTextbox1
+            // textBox3
             // 
-            this.PasswordTextbox1.Location = new System.Drawing.Point(93, 33);
-            this.PasswordTextbox1.MaxLength = 15;
-            this.PasswordTextbox1.Name = "PasswordTextbox1";
-            this.PasswordTextbox1.Size = new System.Drawing.Size(98, 20);
-            this.PasswordTextbox1.TabIndex = 10;
-            this.PasswordTextbox1.UseSystemPasswordChar = true;
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Location = new System.Drawing.Point(120, 61);
+            this.textBox3.MaxLength = 90;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(229, 20);
+            this.textBox3.TabIndex = 12;
             // 
-            // Logging_button
+            // textBox4
             // 
-            this.Logging_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Logging_button.Location = new System.Drawing.Point(306, 93);
-            this.Logging_button.Name = "Logging_button";
-            this.Logging_button.Size = new System.Drawing.Size(98, 24);
-            this.Logging_button.TabIndex = 12;
-            this.Logging_button.Text = "Zaloguj";
-            this.Logging_button.UseVisualStyleBackColor = true;
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.Location = new System.Drawing.Point(120, 87);
+            this.textBox4.MaxLength = 90;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(229, 20);
+            this.textBox4.TabIndex = 13;
             // 
-            // PasswordCheckBox1
+            // tab_register
             // 
-            this.PasswordCheckBox1.AutoSize = true;
-            this.PasswordCheckBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PasswordCheckBox1.Location = new System.Drawing.Point(197, 33);
-            this.PasswordCheckBox1.Name = "PasswordCheckBox1";
-            this.PasswordCheckBox1.Size = new System.Drawing.Size(86, 24);
-            this.PasswordCheckBox1.TabIndex = 13;
-            this.PasswordCheckBox1.Text = "Pokaż hasło";
-            this.PasswordCheckBox1.UseVisualStyleBackColor = true;
-            this.PasswordCheckBox1.CheckedChanged += new System.EventHandler(this.PasswordCheckBox1_CheckedChanged);
+            this.tab_register.Controls.Add(this.table_register);
+            this.tab_register.Location = new System.Drawing.Point(4, 22);
+            this.tab_register.Name = "tab_register";
+            this.tab_register.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_register.Size = new System.Drawing.Size(476, 235);
+            this.tab_register.TabIndex = 1;
+            this.tab_register.Text = "Rejestracja";
+            this.tab_register.UseVisualStyleBackColor = true;
             // 
-            // PalelRegister
+            // table_register
             // 
-            this.PalelRegister.Controls.Add(this.tableLayoutPanel2);
-            this.PalelRegister.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PalelRegister.Location = new System.Drawing.Point(0, 0);
-            this.PalelRegister.Name = "PalelRegister";
-            this.PalelRegister.Size = new System.Drawing.Size(467, 261);
-            this.PalelRegister.TabIndex = 0;
-            this.PalelRegister.TabStop = false;
-            this.PalelRegister.Text = "Rejestruj";
+            this.table_register.AutoSize = true;
+            this.table_register.ColumnCount = 3;
+            this.table_register.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.table_register.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.table_register.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.table_register.Controls.Add(this.label_rp_title, 1, 0);
+            this.table_register.Controls.Add(this.label_rp_name, 0, 1);
+            this.table_register.Controls.Add(this.label_rp_surname, 0, 2);
+            this.table_register.Controls.Add(this.label_rp_login, 0, 3);
+            this.table_register.Controls.Add(this.label_rp_password1, 0, 4);
+            this.table_register.Controls.Add(this.label_rp_password2, 0, 5);
+            this.table_register.Controls.Add(this.label_rp_email, 0, 6);
+            this.table_register.Controls.Add(this.checkBox_rp_password, 2, 4);
+            this.table_register.Controls.Add(this.label_rp_password_match, 2, 5);
+            this.table_register.Controls.Add(this.label_rp_email_valid, 2, 6);
+            this.table_register.Controls.Add(this.textBox_rp_email, 1, 6);
+            this.table_register.Controls.Add(this.textBox_rp_name, 1, 1);
+            this.table_register.Controls.Add(this.textBox_rp_surname, 1, 2);
+            this.table_register.Controls.Add(this.textBox_rp_login, 1, 3);
+            this.table_register.Controls.Add(this.textBox_rp_password1, 1, 4);
+            this.table_register.Controls.Add(this.textBox_rp_password2, 1, 5);
+            this.table_register.Controls.Add(this.button_rp_register, 1, 8);
+            this.table_register.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.table_register.Location = new System.Drawing.Point(3, 3);
+            this.table_register.Name = "table_register";
+            this.table_register.RowCount = 9;
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.table_register.Size = new System.Drawing.Size(470, 229);
+            this.table_register.TabIndex = 0;
             // 
-            // tableLayoutPanel2
+            // label_rp_title
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
-            this.tableLayoutPanel2.Controls.Add(this.r_name, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.r_surname, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.r_login, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.r_password1, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.r_password2, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.r_email, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxName, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxSurname, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxPassword1, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxPassword2, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxEmail, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.r_TextBoxLogin, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.r_register, 2, 7);
-            this.tableLayoutPanel2.Controls.Add(this.r_PasswordError, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.r_infoEmail, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.r_PasswordCheckBox1, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.r_loginButton, 2, 3);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(460, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 9;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(461, 242);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.label_rp_title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_title.AutoSize = true;
+            this.label_rp_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.label_rp_title.Location = new System.Drawing.Point(120, 0);
+            this.label_rp_title.Name = "label_rp_title";
+            this.label_rp_title.Size = new System.Drawing.Size(229, 38);
+            this.label_rp_title.TabIndex = 0;
+            this.label_rp_title.Text = "Zarejestruj";
+            this.label_rp_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // r_name
+            // label_rp_name
             // 
-            this.r_name.AutoSize = true;
-            this.r_name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_name.Location = new System.Drawing.Point(3, 0);
-            this.r_name.Name = "r_name";
-            this.r_name.Size = new System.Drawing.Size(81, 30);
-            this.r_name.TabIndex = 1;
-            this.r_name.Text = "Imię: ";
+            this.label_rp_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_name.AutoSize = true;
+            this.label_rp_name.Location = new System.Drawing.Point(3, 44);
+            this.label_rp_name.Name = "label_rp_name";
+            this.label_rp_name.Size = new System.Drawing.Size(111, 13);
+            this.label_rp_name.TabIndex = 1;
+            this.label_rp_name.Text = "Imię: ";
+            this.label_rp_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // r_surname
+            // label_rp_surname
             // 
-            this.r_surname.AutoSize = true;
-            this.r_surname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_surname.Location = new System.Drawing.Point(3, 30);
-            this.r_surname.Name = "r_surname";
-            this.r_surname.Size = new System.Drawing.Size(81, 30);
-            this.r_surname.TabIndex = 2;
-            this.r_surname.Text = "Nazwisko: ";
+            this.label_rp_surname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_surname.AutoSize = true;
+            this.label_rp_surname.Location = new System.Drawing.Point(3, 70);
+            this.label_rp_surname.Name = "label_rp_surname";
+            this.label_rp_surname.Size = new System.Drawing.Size(111, 13);
+            this.label_rp_surname.TabIndex = 2;
+            this.label_rp_surname.Text = "Nazwisko: ";
+            this.label_rp_surname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // r_login
+            // label_rp_login
             // 
-            this.r_login.AutoSize = true;
-            this.r_login.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_login.Location = new System.Drawing.Point(3, 80);
-            this.r_login.Name = "r_login";
-            this.r_login.Size = new System.Drawing.Size(81, 30);
-            this.r_login.TabIndex = 3;
-            this.r_login.Text = "Login:";
+            this.label_rp_login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_login.AutoSize = true;
+            this.label_rp_login.Location = new System.Drawing.Point(3, 96);
+            this.label_rp_login.Name = "label_rp_login";
+            this.label_rp_login.Size = new System.Drawing.Size(111, 13);
+            this.label_rp_login.TabIndex = 3;
+            this.label_rp_login.Text = "Nazwa użytkownika: ";
+            this.label_rp_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // r_password1
+            // label_rp_password1
             // 
-            this.r_password1.AutoSize = true;
-            this.r_password1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_password1.Location = new System.Drawing.Point(3, 110);
-            this.r_password1.Name = "r_password1";
-            this.r_password1.Size = new System.Drawing.Size(81, 30);
-            this.r_password1.TabIndex = 4;
-            this.r_password1.Text = "Hasło: ";
+            this.label_rp_password1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_password1.AutoSize = true;
+            this.label_rp_password1.Location = new System.Drawing.Point(3, 122);
+            this.label_rp_password1.Name = "label_rp_password1";
+            this.label_rp_password1.Size = new System.Drawing.Size(111, 13);
+            this.label_rp_password1.TabIndex = 4;
+            this.label_rp_password1.Text = "Hasło: ";
+            this.label_rp_password1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // r_password2
+            // label_rp_password2
             // 
-            this.r_password2.AutoSize = true;
-            this.r_password2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_password2.Location = new System.Drawing.Point(3, 140);
-            this.r_password2.Name = "r_password2";
-            this.r_password2.Size = new System.Drawing.Size(81, 30);
-            this.r_password2.TabIndex = 5;
-            this.r_password2.Text = "Powtórz hasło: ";
+            this.label_rp_password2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_password2.AutoSize = true;
+            this.label_rp_password2.Location = new System.Drawing.Point(3, 148);
+            this.label_rp_password2.Name = "label_rp_password2";
+            this.label_rp_password2.Size = new System.Drawing.Size(111, 13);
+            this.label_rp_password2.TabIndex = 5;
+            this.label_rp_password2.Text = "Powtórz hasło: ";
+            this.label_rp_password2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // r_email
+            // label_rp_email
             // 
-            this.r_email.AutoSize = true;
-            this.r_email.Location = new System.Drawing.Point(3, 170);
-            this.r_email.Name = "r_email";
-            this.r_email.Size = new System.Drawing.Size(38, 13);
-            this.r_email.TabIndex = 6;
-            this.r_email.Text = "Email: ";
+            this.label_rp_email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_email.AutoSize = true;
+            this.label_rp_email.Location = new System.Drawing.Point(3, 174);
+            this.label_rp_email.Name = "label_rp_email";
+            this.label_rp_email.Size = new System.Drawing.Size(111, 13);
+            this.label_rp_email.TabIndex = 6;
+            this.label_rp_email.Text = "E-Mail: ";
+            this.label_rp_email.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // r_TextBoxName
+            // checkBox_rp_password
             // 
-            this.r_TextBoxName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_TextBoxName.Location = new System.Drawing.Point(90, 3);
-            this.r_TextBoxName.MaxLength = 15;
-            this.r_TextBoxName.Name = "r_TextBoxName";
-            this.r_TextBoxName.Size = new System.Drawing.Size(200, 20);
-            this.r_TextBoxName.TabIndex = 7;
+            this.checkBox_rp_password.AutoSize = true;
+            this.checkBox_rp_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.checkBox_rp_password.Location = new System.Drawing.Point(355, 119);
+            this.checkBox_rp_password.Name = "checkBox_rp_password";
+            this.checkBox_rp_password.Size = new System.Drawing.Size(77, 16);
+            this.checkBox_rp_password.TabIndex = 7;
+            this.checkBox_rp_password.Text = "Odsłoń hasło";
+            this.checkBox_rp_password.UseVisualStyleBackColor = true;
+            this.checkBox_rp_password.CheckedChanged += new System.EventHandler(this.checkBox_rp_password_CheckedChanged);
             // 
-            // r_TextBoxSurname
+            // label_rp_password_match
             // 
-            this.r_TextBoxSurname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.r_TextBoxSurname.Location = new System.Drawing.Point(90, 33);
-            this.r_TextBoxSurname.MaxLength = 15;
-            this.r_TextBoxSurname.Name = "r_TextBoxSurname";
-            this.r_TextBoxSurname.Size = new System.Drawing.Size(200, 20);
-            this.r_TextBoxSurname.TabIndex = 8;
+            this.label_rp_password_match.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_password_match.AutoSize = true;
+            this.label_rp_password_match.ForeColor = System.Drawing.Color.Red;
+            this.label_rp_password_match.Location = new System.Drawing.Point(355, 148);
+            this.label_rp_password_match.Name = "label_rp_password_match";
+            this.label_rp_password_match.Size = new System.Drawing.Size(112, 13);
+            this.label_rp_password_match.TabIndex = 8;
+            this.label_rp_password_match.Text = "Hasła nie są zgodne!";
+            this.label_rp_password_match.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_rp_password_match.Visible = false;
             // 
-            // r_TextBoxPassword1
+            // label_rp_email_valid
             // 
-            this.r_TextBoxPassword1.Location = new System.Drawing.Point(90, 113);
-            this.r_TextBoxPassword1.MaxLength = 15;
-            this.r_TextBoxPassword1.Name = "r_TextBoxPassword1";
-            this.r_TextBoxPassword1.Size = new System.Drawing.Size(100, 20);
-            this.r_TextBoxPassword1.TabIndex = 10;
-            this.r_TextBoxPassword1.UseSystemPasswordChar = true;
+            this.label_rp_email_valid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_rp_email_valid.AutoSize = true;
+            this.label_rp_email_valid.ForeColor = System.Drawing.Color.Red;
+            this.label_rp_email_valid.Location = new System.Drawing.Point(355, 168);
+            this.label_rp_email_valid.Name = "label_rp_email_valid";
+            this.label_rp_email_valid.Size = new System.Drawing.Size(112, 26);
+            this.label_rp_email_valid.TabIndex = 9;
+            this.label_rp_email_valid.Text = "Wprowadź prawidłowy email";
+            this.label_rp_email_valid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_rp_email_valid.Visible = false;
             // 
-            // r_TextBoxPassword2
+            // textBox_rp_email
             // 
-            this.r_TextBoxPassword2.Location = new System.Drawing.Point(90, 143);
-            this.r_TextBoxPassword2.MaxLength = 15;
-            this.r_TextBoxPassword2.Name = "r_TextBoxPassword2";
-            this.r_TextBoxPassword2.Size = new System.Drawing.Size(100, 20);
-            this.r_TextBoxPassword2.TabIndex = 11;
-            this.r_TextBoxPassword2.UseSystemPasswordChar = true;
-            this.r_TextBoxPassword2.TextChanged += new System.EventHandler(this.r_TextBoxPassword2_TextChanged);
+            this.textBox_rp_email.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_rp_email.Location = new System.Drawing.Point(120, 171);
+            this.textBox_rp_email.MaxLength = 90;
+            this.textBox_rp_email.Name = "textBox_rp_email";
+            this.textBox_rp_email.Size = new System.Drawing.Size(229, 20);
+            this.textBox_rp_email.TabIndex = 10;
+            this.textBox_rp_email.TextChanged += new System.EventHandler(this.textBox_rp_email_TextChanged);
             // 
-            // r_TextBoxEmail
+            // textBox_rp_name
             // 
-            this.r_TextBoxEmail.Dock = System.Windows.Forms.DockStyle.Left;
-            this.r_TextBoxEmail.Location = new System.Drawing.Point(90, 173);
-            this.r_TextBoxEmail.MaxLength = 30;
-            this.r_TextBoxEmail.Name = "r_TextBoxEmail";
-            this.r_TextBoxEmail.Size = new System.Drawing.Size(200, 20);
-            this.r_TextBoxEmail.TabIndex = 12;
+            this.textBox_rp_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_rp_name.Location = new System.Drawing.Point(120, 41);
+            this.textBox_rp_name.MaxLength = 90;
+            this.textBox_rp_name.Name = "textBox_rp_name";
+            this.textBox_rp_name.Size = new System.Drawing.Size(229, 20);
+            this.textBox_rp_name.TabIndex = 11;
             // 
-            // r_TextBoxLogin
+            // textBox_rp_surname
             // 
-            this.r_TextBoxLogin.Location = new System.Drawing.Point(90, 83);
-            this.r_TextBoxLogin.MaxLength = 15;
-            this.r_TextBoxLogin.Name = "r_TextBoxLogin";
-            this.r_TextBoxLogin.Size = new System.Drawing.Size(100, 20);
-            this.r_TextBoxLogin.TabIndex = 13;
+            this.textBox_rp_surname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_rp_surname.Location = new System.Drawing.Point(120, 67);
+            this.textBox_rp_surname.MaxLength = 90;
+            this.textBox_rp_surname.Name = "textBox_rp_surname";
+            this.textBox_rp_surname.Size = new System.Drawing.Size(229, 20);
+            this.textBox_rp_surname.TabIndex = 12;
             // 
-            // r_register
+            // textBox_rp_login
             // 
-            this.r_register.Dock = System.Windows.Forms.DockStyle.Right;
-            this.r_register.Location = new System.Drawing.Point(355, 203);
-            this.r_register.MinimumSize = new System.Drawing.Size(104, 25);
-            this.r_register.Name = "r_register";
-            this.r_register.Size = new System.Drawing.Size(104, 25);
-            this.r_register.TabIndex = 14;
-            this.r_register.Text = "Zarejestruj";
-            this.r_register.UseVisualStyleBackColor = true;
+            this.textBox_rp_login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_rp_login.Location = new System.Drawing.Point(120, 93);
+            this.textBox_rp_login.MaxLength = 90;
+            this.textBox_rp_login.Name = "textBox_rp_login";
+            this.textBox_rp_login.Size = new System.Drawing.Size(229, 20);
+            this.textBox_rp_login.TabIndex = 13;
             // 
-            // r_PasswordError
+            // textBox_rp_password1
             // 
-            this.r_PasswordError.AutoSize = true;
-            this.r_PasswordError.Dock = System.Windows.Forms.DockStyle.Left;
-            this.r_PasswordError.ForeColor = System.Drawing.Color.Red;
-            this.r_PasswordError.Location = new System.Drawing.Point(296, 140);
-            this.r_PasswordError.Name = "r_PasswordError";
-            this.r_PasswordError.Size = new System.Drawing.Size(108, 30);
-            this.r_PasswordError.TabIndex = 15;
-            this.r_PasswordError.Text = "Hasła nie są zgodne!";
-            this.r_PasswordError.Visible = false;
+            this.textBox_rp_password1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_rp_password1.Location = new System.Drawing.Point(120, 119);
+            this.textBox_rp_password1.MaxLength = 90;
+            this.textBox_rp_password1.Name = "textBox_rp_password1";
+            this.textBox_rp_password1.Size = new System.Drawing.Size(229, 20);
+            this.textBox_rp_password1.TabIndex = 14;
+            this.textBox_rp_password1.UseSystemPasswordChar = true;
+            this.textBox_rp_password1.TextChanged += new System.EventHandler(this.textBox_rp_password1_TextChanged);
             // 
-            // r_infoEmail
+            // textBox_rp_password2
             // 
-            this.r_infoEmail.AutoSize = true;
-            this.r_infoEmail.Location = new System.Drawing.Point(296, 170);
-            this.r_infoEmail.Name = "r_infoEmail";
-            this.r_infoEmail.Size = new System.Drawing.Size(133, 26);
-            this.r_infoEmail.TabIndex = 16;
-            this.r_infoEmail.Text = "Email może składać się \n z maksymalnie 30 znaków";
-            this.r_infoEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.textBox_rp_password2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_rp_password2.Location = new System.Drawing.Point(120, 145);
+            this.textBox_rp_password2.MaxLength = 90;
+            this.textBox_rp_password2.Name = "textBox_rp_password2";
+            this.textBox_rp_password2.Size = new System.Drawing.Size(229, 20);
+            this.textBox_rp_password2.TabIndex = 15;
+            this.textBox_rp_password2.UseSystemPasswordChar = true;
+            this.textBox_rp_password2.TextChanged += new System.EventHandler(this.textBox_rp_password2_TextChanged);
             // 
-            // r_PasswordCheckBox1
+            // button_rp_register
             // 
-            this.r_PasswordCheckBox1.AutoSize = true;
-            this.r_PasswordCheckBox1.Location = new System.Drawing.Point(296, 113);
-            this.r_PasswordCheckBox1.Name = "r_PasswordCheckBox1";
-            this.r_PasswordCheckBox1.Size = new System.Drawing.Size(86, 17);
-            this.r_PasswordCheckBox1.TabIndex = 17;
-            this.r_PasswordCheckBox1.Text = "Pokaż hasło";
-            this.r_PasswordCheckBox1.UseVisualStyleBackColor = true;
-            this.r_PasswordCheckBox1.CheckedChanged += new System.EventHandler(this.r_PasswordCheckBox1_CheckedChanged);
+            this.button_rp_register.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_rp_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_rp_register.Location = new System.Drawing.Point(120, 197);
+            this.button_rp_register.Name = "button_rp_register";
+            this.button_rp_register.Size = new System.Drawing.Size(229, 29);
+            this.button_rp_register.TabIndex = 16;
+            this.button_rp_register.Text = "ZAREJESTRUJ";
+            this.button_rp_register.UseVisualStyleBackColor = true;
             // 
-            // r_loginButton
+            // button_lp_login
             // 
-            this.r_loginButton.Location = new System.Drawing.Point(296, 83);
-            this.r_loginButton.Name = "r_loginButton";
-            this.r_loginButton.Size = new System.Drawing.Size(133, 23);
-            this.r_loginButton.TabIndex = 18;
-            this.r_loginButton.Text = "Sprawdź dostępność";
-            this.r_loginButton.UseVisualStyleBackColor = true;
+            this.button_lp_login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_lp_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_lp_login.Location = new System.Drawing.Point(120, 133);
+            this.button_lp_login.Name = "button_lp_login";
+            this.button_lp_login.Size = new System.Drawing.Size(229, 33);
+            this.button_lp_login.TabIndex = 17;
+            this.button_lp_login.Text = "ZALOGUJ";
+            this.button_lp_login.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 261);
-            this.Controls.Add(this.splitContainer1);
+            this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.tab_logging);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 300);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(900, 300);
+            this.MinimumSize = new System.Drawing.Size(500, 300);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PSW lab4 logowanie";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.PalelLogging.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.tab_logging.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.PalelRegister.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            this.tab_register.ResumeLayout(false);
+            this.tab_register.PerformLayout();
+            this.table_register.ResumeLayout(false);
+            this.table_register.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.GroupBox PalelLogging;
+
+        private System.Windows.Forms.TabControl tab_logging;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tab_register;
+        private System.Windows.Forms.TableLayoutPanel table_register;
+        private System.Windows.Forms.Label label_rp_title;
+        private System.Windows.Forms.Label label_rp_name;
+        private System.Windows.Forms.Label label_rp_surname;
+        private System.Windows.Forms.Label label_rp_login;
+        private System.Windows.Forms.Label label_rp_password1;
+        private System.Windows.Forms.Label label_rp_password2;
+        private System.Windows.Forms.Label label_rp_email;
+        private System.Windows.Forms.CheckBox checkBox_rp_password;
+        private System.Windows.Forms.Label label_rp_password_match;
+        private System.Windows.Forms.Label label_rp_email_valid;
+        private System.Windows.Forms.TextBox textBox_rp_email;
+        private System.Windows.Forms.TextBox textBox_rp_name;
+        private System.Windows.Forms.TextBox textBox_rp_surname;
+        private System.Windows.Forms.TextBox textBox_rp_login;
+        private System.Windows.Forms.TextBox textBox_rp_password1;
+        private System.Windows.Forms.TextBox textBox_rp_password2;
+        private System.Windows.Forms.Button button_rp_register;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox LoginTextBox;
-        private System.Windows.Forms.Label LoginLabel;
-        private System.Windows.Forms.Label PasswordLabel1;
-        private System.Windows.Forms.TextBox PasswordTextbox1;
-        private System.Windows.Forms.GroupBox PalelRegister;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label r_name;
-        private System.Windows.Forms.Label r_surname;
-        private System.Windows.Forms.Button Logging_button;
-        private System.Windows.Forms.Label r_login;
-        private System.Windows.Forms.Label r_password1;
-        private System.Windows.Forms.Label r_password2;
-        private System.Windows.Forms.Label r_email;
-        private System.Windows.Forms.TextBox r_TextBoxName;
-        private System.Windows.Forms.TextBox r_TextBoxSurname;
-        private System.Windows.Forms.TextBox r_TextBoxPassword1;
-        private System.Windows.Forms.TextBox r_TextBoxPassword2;
-        private System.Windows.Forms.TextBox r_TextBoxEmail;
-        private System.Windows.Forms.CheckBox PasswordCheckBox1;
-        private System.Windows.Forms.TextBox r_TextBoxLogin;
-        private System.Windows.Forms.Button r_register;
-        private System.Windows.Forms.Label r_PasswordError;
-        private System.Windows.Forms.Label r_infoEmail;
-        private System.Windows.Forms.CheckBox r_PasswordCheckBox1;
-        private System.Windows.Forms.Button r_loginButton;
+        private System.Windows.Forms.Label label_lp_title;
+        private System.Windows.Forms.Label label_lp_login;
+        private System.Windows.Forms.Label label_lp_password;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button_lp_login;
     }
 }
 

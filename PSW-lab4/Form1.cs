@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace PSW_lab4
@@ -10,30 +11,58 @@ namespace PSW_lab4
             InitializeComponent();
         }
 
-        private void r_TextBoxPassword2_TextChanged(object sender, EventArgs e)
+        
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            changeTextBoxVilability(r_TextBoxPassword1, r_TextBoxPassword2, r_PasswordError);
+
         }
 
-        private void r_PasswordCheckBox1_CheckedChanged(object sender, EventArgs e)
+
+        private void textBox_rp_password1_TextChanged(object sender, EventArgs e)
         {
-            changePasswordChar(r_TextBoxPassword1, r_TextBoxPassword2, !r_PasswordCheckBox1.Checked);
+            check_textBox_rp();
         }
 
-        private void changeTextBoxVilability(TextBox textBox1, TextBox textBox2, Label label)
+        private void textBox_rp_password2_TextChanged(object sender, EventArgs e)
         {
-            label.Visible = textBox1.Text != textBox2.Text ? true : false;
+            check_textBox_rp();
         }
 
-        private void changePasswordChar(TextBox box1,TextBox box2 , Boolean booleanValue)
+        private void check_textBox_rp()
         {
-            box1.UseSystemPasswordChar = booleanValue;
-            box2.UseSystemPasswordChar = booleanValue;
+            bool state = (textBox_rp_password1.Text != textBox_rp_password2.Text);
+            
+            label_rp_password_match.Visible = state;
+            
         }
 
-        private void PasswordCheckBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox_rp_password_CheckedChanged(object sender, EventArgs e)
         {
-            PasswordTextbox1.UseSystemPasswordChar = !PasswordTextbox1.UseSystemPasswordChar;
+            textBox_rp_password1.UseSystemPasswordChar = !(textBox_rp_password1.UseSystemPasswordChar);
+            textBox_rp_password2.UseSystemPasswordChar = !(textBox_rp_password2.UseSystemPasswordChar);
+        }
+
+        private void textBox_rp_email_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox_rp_email.Text.Length > 0)
+            {
+                label_rp_email_valid.Visible = isNotValidEmail(textBox_rp_email.Text);
+            }
+        }
+
+        private bool isNotValidEmail(string emailaddress)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(emailaddress);
+
+                return false;
+            }
+            catch (FormatException)
+            {
+                return true;
+            }
         }
     }
 }
