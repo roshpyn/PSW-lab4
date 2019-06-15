@@ -10,15 +10,21 @@ namespace PSW_lab4
         /// </summary>
         /// 
 
+
+
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
 
-           // MailSender mailSender = new MailSender();
-           // mailSender.SendEmail("lukasz.szadowski@gmail.com", "aa", "AA");
+
+            MailSender mailSender = new MailSender();
+            //mailSender.SendEmail("lukasz.szadowski@gmail.com", "aa", "AA");
         }
+        
     }
 }
